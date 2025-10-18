@@ -1,19 +1,13 @@
 def count_words(words: str) -> int:
-    counter = 0
-    words = words.strip()
-
-    for i in words:
-        if i == " ":
-            counter += 1
-    return counter
+    words = words.strip().split()
+    return len(words)
 
 def reverse_words(words: str) -> str:
-    reversed_words = []
-    return string(reversed_words)
+    words = words.strip().split()
+    words.reverse()
+    return " ".join(words)
 
 def remove_whitespaces(word: str) -> str:
-    word = word.strip()
-    cleaned_word = ""
-    l,r = 0, 0
-    while l <= len(word) or r <= len(word):
+    word = word.strip().split()
+    return "".join(word)
 
