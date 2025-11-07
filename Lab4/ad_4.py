@@ -1,6 +1,13 @@
 from statistics import median
 
-def fun(*args) -> float | str:
+def fun(*args) -> float:
+    """
+    This function calculates avg if *args is numbers, median of len if *args is strs
+    :param *args:
+    :return: avg if *args is numbers, median of len if *args is strs
+    """
+    
+    
     if all(isinstance(arg, (int, float)) for arg in args):
         return sum(args) / len(args) if args else 0
 
@@ -9,7 +16,8 @@ def fun(*args) -> float | str:
         return median(lengths) if lengths else 0
 
     else:
-        return "Invalid args"
+        print("Invalid args")
+        return 0.0
 
 
 print(fun(1, 2, 3, 4))

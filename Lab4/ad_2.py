@@ -1,4 +1,8 @@
 def sort_by_chars_count(numbers: list[int]) -> None:
+    """
+    This function prints shortest and longest numbers from the provided list
+    :param numbers: List of numbers
+    """
     strs = [str(abs(number)) for number in numbers]
     strs.sort(key= lambda x: len(x))
     print(f"shortest number: {strs[0]} | longest number: {strs[-1]}")

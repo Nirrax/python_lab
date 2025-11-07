@@ -1,0 +1,4 @@
+2025-11-07 23:52:33.189167 | adder | args=(1, 2), kwargs={}
+2025-11-07 23:52:33.189167 | printer | args=(), kwargs={}
+2025-11-07 23:52:33.189167 | printer | args=('Print',), kwargs={}
+2025-11-07 23:52:33.189167 | kwarger | args=(), kwargs={'a': 2, 'b': 'abc'}
