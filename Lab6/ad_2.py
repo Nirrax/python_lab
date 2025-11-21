@@ -1,5 +1,7 @@
 import Product
+
 from Lab6.Product import ElectronicDevice
+
 
 def is_order_valid(order: dict[str, int], storage: list[type[Product]]) -> float:
     storage_names = [product.name for product in storage]
@@ -21,11 +23,6 @@ def is_order_valid(order: dict[str, int], storage: list[type[Product]]) -> float
     return price
 
 
-o = {
-    "Pralka": 10,
-    "Mikrofala": 5,
-    "Zemsta": 2,
-    "Harry Potter": 1
-}
+o = {"Pralka": 10, "Mikrofala": 5, "Zemsta": 2, "Harry Potter": 1}
 
 i1 = ElectronicDevice()
