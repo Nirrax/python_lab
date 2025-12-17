@@ -1,0 +1,3 @@
+threadpoolexecutor tworzy wątki do wykonania zadań w tle. Zadania są wykonywane współbieżnie (proces przełącza się między wątkami).
+
+processpoolexecutor tworzy procesy do wykonania zadań w tle. Zadania są wykonywane równolegle (każdy proces wykonuje swoje zadanie niezależnie od innych procesów).
