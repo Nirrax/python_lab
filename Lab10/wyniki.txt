@@ -1,0 +1,15 @@
+Zad 2 threads dla 100000 elementów:
+    Average time for add_to_queue: 0.000504 seconds
+    Average time for take_from_queue: 0.000469 seconds
+Zad 2 asyncio dla 100000 elementów:
+    Average time for add_to_queue: 0.000041 seconds
+    Average time for take_from_queue: 0.000041 seconds
+Zad 4 threads dzialania przez minute:
+    Average time for add_items: 0.062155 seconds
+    Average time for remove_items: 0.101145 seconds
+Zad 4 asyncio dzialania przez minute:
+    Average time for add_items: 0.064138 seconds
+    Average time for remove_items: 0.045146 seconds
+
+Uzycie asyncio jest wydajniejsze przy obsłudze dużej liczby elementów w operacjach i/o bound (operacje na kolejce)
+W zadaniu 4 asyncio jest spowalniane przez to, że musi czekać w przypadku edge caseów (kolejka jest pusta/kolejka jest pełna)
