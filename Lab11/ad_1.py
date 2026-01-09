@@ -1,7 +1,10 @@
 import json
 
+
 class Student:
-    def __init__(self, name: str, email: str, grade: str, is_adult: bool, grades: list[int]):
+    def __init__(
+        self, name: str, email: str, grade: str, is_adult: bool, grades: list[int]
+    ):
         self.name = name
         self.email = email
         self.grade = grade
@@ -27,20 +30,29 @@ class Student:
             "grades_avg": self.grades_avg,
         }
 
+
 FILEPATH = "students.json"
+
 
 def load_students(filepath: str) -> list[type[Student]]:
     with open(filepath) as file:
         students = []
         data = json.load(file)
         for student in data["students"]:
-            students.append(Student(student["name"], student["email"], student["grade"], student["is_adult"], student["grades"]))
+            students.append(
+                Student(
+                    student["name"],
+                    student["email"],
+                    student["grade"],
+                    student["is_adult"],
+                    student["grades"],
+                )
+            )
         return students
 
+
 def save_students(filepath: str, students: list[type[Student]]) -> None:
-    data = {
-        "students": [student.to_dict() for student in students]
-    }
+    data = {"students": [student.to_dict() for student in students]}
 
     with open(filepath, "w", encoding="utf-8") as file:
         json.dump(data, file, indent=2)
@@ -49,3 +61,6 @@ def save_students(filepath: str, students: list[type[Student]]) -> None:
 s = load_students(FILEPATH)
 print(s)
 save_students("students_updated.json", s)
+
+ns = load_students("students_updated.json")
+print(ns)

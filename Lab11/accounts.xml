@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<BankAccounts>
+    <BankAccount>
+        <Name>John</Name>
+        <Surname>Doe</Surname>
+        <AccountNumber>111</AccountNumber>
+        <Type>Savings</Type>
+        <Balance>1200.50</Balance>
+    </BankAccount>
+    <BankAccount>
+        <Name>Anna</Name>
+        <Surname>Smith</Surname>
+        <AccountNumber>222</AccountNumber>
+        <Type>Checking</Type>
+        <Balance>800.00</Balance>
+    </BankAccount>
+</BankAccounts>

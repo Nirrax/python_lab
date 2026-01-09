@@ -5,14 +5,16 @@
       "email": "j.kowalski8@gmail.com",
       "grade": "1C",
       "is_adult": false,
-      "grades": [2, 5, 3, 5]
+      "grades": [2, 5, 3, 5],
+      "grades_avg": 3.75
     },
     {
       "name": "Karolina Nowak",
       "email": "",
       "grade": "3F",
       "is_adult": true,
-      "grades": [4, 2, 2, 2]
+      "grades": [4, 2, 2, 2],
+      "grades_avg": 2.5
     }
   ]
 }
